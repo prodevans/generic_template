@@ -15,11 +15,14 @@ app = Flask(__name__)
 
 global sentiment_textblob
 sentiment_textblob=''
+
 # Get the polarity score using below function
 def get_textBlob_score(sent):
     # This polarity score is between -1 to 1
     polarity = TextBlob(sent).sentiment.polarity
     return polarity
+
+
 @app.route('/')
 def load():
     return render_template('index.html')
