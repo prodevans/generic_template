@@ -1,0 +1,9 @@
+Flask
+Pandas
+Numpy
+Werkzeug
+python-csv
+sklearn
+pickle-mixin
+pillow
+d2
